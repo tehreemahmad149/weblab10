@@ -1,0 +1,109 @@
+body{
+    display: block;
+}
+.teacher-view-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.class-entry {
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+}
+
+.class-entry p {
+    margin: 5px 0;
+}
+
+.green {
+    color: green;
+    font-size: 1.2rem;
+}
+
+.red {
+    color: red;
+    font-size: 1.2rem;
+}
+
+.open-roster-btn {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.open-roster-btn:hover {
+    background-color: #45a049;
+}
+.roster-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+}
+
+.student-entry {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.attendance-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.attendance-button.present {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.attendance-button.absent {
+    background-color: #FF4D4D;
+    color: white;
+}
+
+.save-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .teacher-view-container {
+        width: 90%;
+    }
+
+    .open-roster-btn {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,100 @@
+/* Green Header Styling */
+.course {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: block;
+    height: 100vh;
+}
+.student-header {
+    position: relative; /* Ensure the header stays in the normal document flow */
+    top: 0; /* Align at the top */
+    left: 0;
+    width: 100%; /* Full width */
+    background-color: green; /* Green background */
+    color: white; /* White text */
+    text-align: center; /* Center text alignment */
+    padding: 20px 0; /* Add vertical padding */
+    font-size: 1.8rem; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+/* Remove conflicting global header styles */
+header h1 {
+    font-size: inherit;
+    padding: 0;
+    margin: 0;
+    color: inherit;
+}
+
+/* Style for course containers */
+.courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.course-card {
+    width: 250px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.course-card h2 {
+    background-color: #45a049;
+    color: white;
+    padding: 10px 0;
+    font-size: 1.2rem;
+}
+
+.course-card:hover {
+    transform: scale(1.05);
+}
+
+.progress-bar {
+    height: 10px;
+    overflow: hidden;
+    background-color: #e0e0e0;
+    margin: 10px 0;
+    position: relative;
+}
+
+.progress-bar span {
+    display: block;
+    height: 100%;
+    border-radius: 12.5px;
+}
+
+.green {
+    background-color: rgb(0, 255, 0);
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .course-card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .courses-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
